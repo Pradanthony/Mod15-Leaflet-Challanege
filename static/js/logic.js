@@ -47,17 +47,17 @@ var myMap = L.map("map", {
     // Helper function to calculate marker color based on depth
     function getMarkerColor(depth) {
         if (depth < 10) {
-            return "#FF0000"; // Red for shallow earthquakes
+            return "#C1FFC1"; // Light green for shallow earthquakes
         } else if (depth < 30) {
-            return "#FFA500"; // Orange for medium-depth earthquakes
+            return "#00FF00"; // Green for medium-depth earthquakes
         } else if (depth < 50) {
             return "#FFFF00"; // Yellow for earthquakes with depth between 30 and 50
         } else if (depth < 70) {
-            return "#00FF00"; // Green for earthquakes with depth between 50 and 70
+            return "#FFC04D"; // Light Orange for earthquakes with depth between 50 and 70
         } else if (depth < 90) {
-            return "#00FFFF"; // Cyan for earthquakes with depth between 70 and 90
+            return "#FFA500"; // Orange for earthquakes with depth between 70 and 90
         } else {
-            return "#0000FF"; // Blue for deep earthquakes with depth greater than or equal to 90
+            return "#FF0000"; // Red for deep earthquakes with depth greater than or equal to 90
         }
     }
   
